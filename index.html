@@ -1,42 +1,65 @@
-<form>
-  <input type="number" id="num1" value="0">
-  <select id="operator">
-    <option value="+">+</option>
-    <option value="-">-</option>
-    <option value="*">*</option>
-    <option value="/">/</option>
-  </select>
-  <input type="number" id="num2" value="0">
-  <button type="button" onclick="calculate()">Calculate</button>
-  <p id="result"></p>
-</form>
-
-<script>
-  function calculate() {
-    let num1 = parseInt(document.getElementById("num1").value);
-    let operator = document.getElementById("operator").value;
-    let num2 = parseInt(document.getElementById("num2").value);
-    let result;
-
-    switch (operator) {
-      case "+":
-        result = num1 + num2;
-        break;
-      case "-":
-        result = num1 - num2;
-        break;
-      case "*":
-        result = num1 * num2;
-        break;
-      case "/":
-        if (num2 !== 0) {
-          result = num1 / num2;
-        } else {
-          result = "Error: Division by zero!";
-        }
-        break;
-    }
-
-    document.getElementById("result").innerHTML = result;
-  }
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sales Page</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<h1>Sales Page</h1>
+	</header>
+	<main>
+		<section class="hero">
+			<img src="hero-image.jpg" alt="Hero Image">
+			<h2>Headline</h2>
+			<p>Call-to-Action</p>
+		</section>
+		<section class="problem">
+			<h2>Problem</h2>
+			<p>Brief description of the problem</p>
+			<img src="problem-icon.png" alt="Problem Icon">
+		</section>
+		<section class="solution">
+			<h2>Solution</h2>
+			<p>Brief description of the solution</p>
+			<img src="solution-icon.png" alt="Solution Icon">
+		</section>
+		<section class="features">
+			<h2>Features</h2>
+			<ul>
+				<li><span>Feature 1</span><img src="feature-icon1.png" alt="Feature Icon 1"></li>
+				<li><span>Feature 2</span><img src="feature-icon2.png" alt="Feature Icon 2"></li>
+				<li><span>Feature 3</span><img src="feature-icon3.png" alt="Feature Icon 3"></li>
+			</ul>
+		</section>
+		<section class="testimonials">
+			<h2>Testimonials</h2>
+			<blockquote>
+				<p>Quote from satisfied customer</p>
+				<cite>Customer Name</cite>
+			</blockquote>
+			<blockquote>
+				<p>Quote from satisfied customer</p>
+				<cite>Customer Name</cite>
+			</blockquote>
+		</section>
+		<section class="call-to-action">
+			<h2>Call-to-Action</h2>
+			<p>Get Started</p>
+			<button>Sign Up Now</button>
+		</section>
+	</main>
+	<footer>
+		<p>Contact Information</p>
+		<p>Social Media Links</p>
+		<p>Copyright Information</p>
+	</footer>
+</body>
+</html>
