@@ -1,65 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Sales Page</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fena Fena Fena</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 5rem;
+            animation: glow 1.5s infinite alternate;
+            text-shadow: 0 0 20px #ff007f, 0 0 30px #ff007f;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 20px #ff007f, 0 0 30px #ff007f;
+            }
+            100% {
+                text-shadow: 0 0 40px #ff007f, 0 0 60px #ff007f;
+            }
+        }
+        button {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff007f;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 0 10px #ff007f;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #ff007f;
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-		<h1>Sales Page</h1>
-	</header>
-	<main>
-		<section class="hero">
-			<img src="hero-image.jpg" alt="Hero Image">
-			<h2>Headline</h2>
-			<p>Call-to-Action</p>
-		</section>
-		<section class="problem">
-			<h2>Problem</h2>
-			<p>Brief description of the problem</p>
-			<img src="problem-icon.png" alt="Problem Icon">
-		</section>
-		<section class="solution">
-			<h2>Solution</h2>
-			<p>Brief description of the solution</p>
-			<img src="solution-icon.png" alt="Solution Icon">
-		</section>
-		<section class="features">
-			<h2>Features</h2>
-			<ul>
-				<li><span>Feature 1</span><img src="feature-icon1.png" alt="Feature Icon 1"></li>
-				<li><span>Feature 2</span><img src="feature-icon2.png" alt="Feature Icon 2"></li>
-				<li><span>Feature 3</span><img src="feature-icon3.png" alt="Feature Icon 3"></li>
-			</ul>
-		</section>
-		<section class="testimonials">
-			<h2>Testimonials</h2>
-			<blockquote>
-				<p>Quote from satisfied customer</p>
-				<cite>Customer Name</cite>
-			</blockquote>
-			<blockquote>
-				<p>Quote from satisfied customer</p>
-				<cite>Customer Name</cite>
-			</blockquote>
-		</section>
-		<section class="call-to-action">
-			<h2>Call-to-Action</h2>
-			<p>Get Started</p>
-			<button>Sign Up Now</button>
-		</section>
-	</main>
-	<footer>
-		<p>Contact Information</p>
-		<p>Social Media Links</p>
-		<p>Copyright Information</p>
-	</footer>
+    <div>
+        <h1>FENA FENA FENA!</h1>
+        <button onclick="alert('Fena mı? Fenaaa!')">Tıkla ve Fenala!</button>
+    </div>
 </body>
 </html>
